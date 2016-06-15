@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MapsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Sheet1$">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="Code" Type="nvarchar" MaxLength="255" />
+    <Property Name="Latitude" Type="float" />
+    <Property Name="Longitude" Type="float" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="contactperson" Type="nvarchar" MaxLength="255" />
+    <Property Name="warada" Type="float" />
+    <Property Name="subcity" Type="nvarchar" MaxLength="255" />
+    <Property Name="district" Type="nvarchar" MaxLength="255" />
+    <Property Name="telephone" Type="float" />
+    <Property Name="F10" Type="nvarchar" MaxLength="255" />
+    <Property Name="F11" Type="nvarchar" MaxLength="255" />
+    <Property Name="F12" Type="nvarchar" MaxLength="255" />
+    <Property Name="F13" Type="nvarchar" MaxLength="255" />
+    <Property Name="F14" Type="nvarchar" MaxLength="255" />
+    <Property Name="F15" Type="nvarchar" MaxLength="255" />
+    <Property Name="F16" Type="nvarchar" MaxLength="255" />
+    <Property Name="F17" Type="nvarchar" MaxLength="255" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="MapsModelStoreContainer">
+    <EntitySet Name="Sheet1$" EntityType="Self.Sheet1$" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

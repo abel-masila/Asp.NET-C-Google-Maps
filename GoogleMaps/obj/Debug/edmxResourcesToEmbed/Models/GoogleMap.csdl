@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MapsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Location">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Latitude" Type="Double" />
+    <Property Name="Longitude" Type="Double" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="contactperson" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="warada" Type="Double" />
+    <Property Name="subcity" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="district" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="telephone" Type="Double" />
+    <Property Name="F10" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="F11" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="F12" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="F13" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="F14" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="F15" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="F16" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="F17" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityContainer Name="MapsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Sheet1_" EntityType="MapsModel.Location" />
+  </EntityContainer>
+</Schema>
